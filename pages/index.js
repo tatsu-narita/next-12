@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
+    <div className="hero">
       <h1>CUBE</h1>
       <p>アウトプットしていくサイト</p>
     </div>
