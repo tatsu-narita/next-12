@@ -1,10 +1,14 @@
-import Layout from 'components/layout'
-import Hero from 'components/hero'
+import Header from "components/header"
+import Footer from "components/footer"
 
 export default function Layout({ children }) {
     return (
-        <Layout>
-            <Hero />
-        </Layout>
+        <>
+            <Header />
+
+            <main>{children}</main>
+
+            <Footer />
+        </>
     )
 }
