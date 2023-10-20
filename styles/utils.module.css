@@ -12,7 +12,21 @@
 }
 
 @media (min-width: 768px) {
-    
+    .sideBySide {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 /* 横並び (中央揃え) */
+.sideBySideCenter {
+    composes: sideBySide;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .sideBySideCenter {
+        text-align: left;
+    }
+}
