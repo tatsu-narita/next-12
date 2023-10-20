@@ -1,0 +1,18 @@
+/* 両端揃え */
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 横並び (基本形) */
+.sideBySide {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+/* 横並び (中央揃え) */
