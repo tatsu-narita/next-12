@@ -5,7 +5,7 @@ import {
     faTwitter,
     faFacebookF,
     faGithub,
-} from "@fotawesome/free-brands-svg-icons"
+} from "@fortawesome/free-brands-svg-icons"
 
 export default function Social() {
     return (
