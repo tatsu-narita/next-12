@@ -12,19 +12,19 @@ export default function Social() {
     return (
         <ul className={styles.list}>
             <li>
-                <a href="http://twitter.com/">
+                <a href="https://twitter.com/">
                     <FontAwesomeIcon icon={faTwitter} />
                     <span className="sr-only">Twitter</span>
                 </a>
             </li>
             <li>
-                <a href="http://www.facebook.com/">
+                <a href="https://www.facebook.com/">
                     <FontAwesomeIcon icon={faFacebookF} />
                     <span className="sr-only">Facebook</span>
                 </a>
             </li>
             <li>
-                <a href="http://github.com">
+                <a href="https://github.com">
                     <FontAwesomeIcon icon={faGithub} />
                     <span className="sr-only">Github</span>
                 </a>
