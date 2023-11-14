@@ -8,6 +8,7 @@ import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "components/two-colum
 import ConvertBody from "components/convert-body"
 import PostCategories from "components/post-categories"
 import Image from "next/image"
+import { getPlaiceholder } from "plaiceholder"
 
 //ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from "lib/constants"
@@ -41,6 +42,8 @@ export default function Schedule({
                         height={eyecatch.height}
                         sizes="(min-width: 1152px) 1152px, 100vw"
                         priority
+                        placeholder="blur"
+                        blurDataURL={eyecatch.blurDataURL}
                     />
                 </figure>
 
@@ -67,6 +70,9 @@ export async function getStaticProps() {
     const description = extractText(post.content)
 
     const eyecatch = post.eyecatch ?? eyecatchLocal
+
+    const { base64 } = await getPlaiceholder(eyecatch.url)
+    eyecatch.blurDataURL = base64
 
     return {
         props: {
