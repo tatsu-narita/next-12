@@ -1,4 +1,4 @@
-/*
+
 import styles from "styles/posts.module.css"
 import Link from "next/link"
 
@@ -17,4 +17,3 @@ export default function Posts({ posts }) {
         </div> 
     )
 }
-*/

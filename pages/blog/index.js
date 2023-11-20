@@ -1,10 +1,10 @@
-//import { getAllPosts } from "lib/api"
+import { getAllPosts } from "lib/api"
 import Meta from "components/meta"
 import Container from "components/container"
 import Hero from "components/hero"
 
 
-export default function Blog(/*{ posts }*/) {
+export default function Blog({ posts }) {
     return (
         <Container>
             <Meta pageTitle="ブログ" pageDesc="ブログ記事一覧" />
@@ -17,7 +17,7 @@ export default function Blog(/*{ posts }*/) {
     )
 }
 
-/*export async function getStaticProps() {
+export async function getStaticProps() {
     const posts = await getAllPosts()
 
     return {
@@ -26,4 +26,3 @@ export default function Blog(/*{ posts }*/) {
         },
     }
 }
-*/
