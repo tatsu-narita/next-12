@@ -4,7 +4,7 @@ import Container from "components/container"
 import Hero from "components/hero"
 
 
-export default function Blog({ posts }) {
+export default function Blog(/*{ posts }*/) {
     return (
         <Container>
             <Meta pageTitle="ブログ" pageDesc="ブログ記事一覧" />
