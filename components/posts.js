@@ -1,4 +1,3 @@
-
 import styles from "styles/posts.module.css"
 import Link from "next/link"
 
