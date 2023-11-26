@@ -11,8 +11,9 @@ export default function Category({ name }) {
 }
 
 export async function getStaticPaths() {
+    const allCats = await getAllCategories()
     return {
-        paths: ["/blog/category/technology"],
+        paths: allCats.map(({ slug }) => `/blog/category/${slug}`),
         fallback: false,
     }
 }
@@ -25,7 +26,7 @@ export async function getStaticProps(context) {
 
     return {
         props: {
-            name: cat,name,
+            name: cat.name,
         },
     }
 }
