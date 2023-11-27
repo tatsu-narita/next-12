@@ -10,6 +10,18 @@
     }
 }
 
+/* モバイル */
+@media (max-width: 767px) {
+    /* ボタン */
+    .close .btn {
+        color: blue;
+    }
+
+    .open .btn {
+        color: red;
+    }
+}
+
 /* ホバー */
 @media (hover: hover) {
     .list a:hover {
