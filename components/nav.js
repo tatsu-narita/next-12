@@ -4,9 +4,16 @@ import styles from "styles/nav.module.css"
 
 export default function Nav() {
     const [navIsOpen, setNavIsOpen] = useState(false)
+
+    const toggleNav = () => {
+        setNavIsOpen((prev) => !prev)
+    }
+
     return (
         <nav className={navIsOpen ? styles.open : styles.close}>
-            <btoa className={styles.btn}>MENU</btoa>
+            <btoa className={styles.btn} onClick={toggleNav}>
+                MENU
+            </btoa>
 
             <ul className={styles.list}>
                 <li>
