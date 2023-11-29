@@ -14,16 +14,28 @@
 @media (max-width: 767px) {
     /* ボタン */
     .btn {
+        all: unset;
+        outline: revert;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+        width: 42px;
+        height: 42px;
         position: relative;
         z-index: 200;
     }
 
     .close .btn {
-        color: blue;
+        color: var(--gray-75);
     }
 
     .open .btn {
-        color: red;
+        color: var(--white);
+    }
+
+    /* ボタン内のバー */
+    .btn {
+        display: grid;
+        place-items: center;
     }
 
     /* メニュー（オーバーレイ）*/
