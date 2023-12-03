@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleChevronDown } from "@fortawesome/free-solid-svg-icons"
 
 export default function Accordion({ heading, children }) {
+    const [textIsOpen, setTextOpen] = useState(false)
     return (
         <div className={styles.open}>
             <h3 className={styles.heading}>
