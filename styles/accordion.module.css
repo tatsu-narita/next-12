@@ -40,7 +40,7 @@
 }
 
 .open .text {
-    height: auto;
+    height: var(--text-height);
 }
 
 .textInner {
