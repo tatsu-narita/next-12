@@ -24,7 +24,7 @@ export default function Accordion({ heading, children }) {
                 className={styles.text}
                 ref={refText}
                 style={{
-                    "--text-height": `${refText.current.scrollHeight}px`,
+                    "--text-height": refText.current ? `${refText.current.scrollHeight}px`: "0px",
                 }}
             >
                 <div className={styles.textInner}>{children}</div>
