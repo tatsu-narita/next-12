@@ -27,6 +27,9 @@ export default function Home({posts}) {
 }
 
 export async function getStaticProps() {
+  const url = ""
+  console.log(await getPlaiceholder(url))
+
   const posts = await getAllPosts(4)
 
   for (const post of posts) {
