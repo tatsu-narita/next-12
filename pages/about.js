@@ -8,6 +8,13 @@ import Accordion from "components/accordion"
 import Image from "next/image"
 import eyecatch from "images/about.jpg"
 
+/*const eyecatch = {
+    src: "",
+    height: 960,
+    width: 1920,
+    blurDataURL: "data:image/jpeg;base64,",
+}*/
+
 export default function About() {
     return (
         <Container>
