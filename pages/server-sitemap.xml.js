@@ -9,6 +9,8 @@ export async function getServerSideProps(context) {
     const postFields = posts.map((post) => {
         return {
             loc: `${siteMeta.siteUrl}/${post.slug}`,
+            lastmod: post.revisedAt,
+            changefreq: "daily",
         }
     })
 
