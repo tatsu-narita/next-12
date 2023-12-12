@@ -11,4 +11,15 @@ export async function getServerSideProps(context) {
             loc: `${siteMeta.siteUrl}/${post.slug}`,
         }
     })
+
+    const cats = await getAllCategories()
+    const catFields = cats.map((cat) =>{
+        return {
+            loc: `${siteMeta.siteUrl}/blog/category/${cat.slug}`,
+        }
+    })
+
+    const allFields = [...postFields, ...catFields]
+
+    return await getServerSideSitemap(context, allFields)
 }
