@@ -1,3 +1,4 @@
+import BlueFrame from "components/nested-layout"
 import Meta from "components/meta"
 import Container from "components/container"
 import Hero from "components/hero"
@@ -91,4 +92,8 @@ export default function About() {
             </TwoColumn>
         </Container>
     )
+}
+
+About.getLayout = function getLayout(page) {
+    return <BlueFrame>{page}</BlueFrame>
 }
