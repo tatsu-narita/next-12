@@ -1,4 +1,4 @@
-import BlueFrame from "components/nested-layout"
+import BlueFrame from "components/nested-layout.module.css"
 import Meta from "components/meta"
 import Container from "components/container"
 import Hero from "components/hero"
