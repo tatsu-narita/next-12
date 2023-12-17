@@ -4,7 +4,7 @@
 }
 
 .frame > :first-child {
-    padding: var(--space-xs);
+    padding: var(--space-xs) 0;
     background-color: var(--white);
     border-radius: 20px;
 }
