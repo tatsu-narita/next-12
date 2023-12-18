@@ -1,6 +1,6 @@
-import Meta from "components/meta";
-import Container from "components/container";
-import Hero from "components/hero";
+import Meta from "components/meta"
+import Container from "components/container"
+import Hero from "components/hero"
 
 export default function Custom404() {
     return (
