@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleChevronDown } from "@fortawesome/free-solid-svg-icons"
 
 export default function Accordion({ heading, children }) {
-    const [textIsOpen, setTextOpen] = useState(false)
+    const [textIsOpen, setTextIsOpen] = useState(false)
 
     const toggleText = () => {
         setTextIsOpen((prev) => !prev)
