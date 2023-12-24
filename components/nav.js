@@ -17,13 +17,13 @@ export default function Nav() {
         <nav className={navIsOpen ? styles.open : styles.close}>
             {navIsOpen && (
                 <style jsx global>{`
-                @media (max-width: 767px) {
-                    body {
-                        overflow: hidden;
-                        position: fixed;
-                        width: 100%;
+                    @media (max-width: 767px) {
+                        body {
+                            overflow: hidden;
+                            position: fixed;
+                            width: 100%;
+                        }
                     }
-                }
                 `}</style>
             )}
             <btoa className={styles.btn} onClick={toggleNav}>
