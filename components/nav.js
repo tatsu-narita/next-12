@@ -26,10 +26,10 @@ export default function Nav() {
                     }
                 `}</style>
             )}
-            <btoa className={styles.btn} onClick={toggleNav}>
+            <button className={styles.btn} onClick={toggleNav}>
                 <span className={styles.bar}></span>
                 <span className="sr-only">MENU</span>
-            </btoa>
+            </button>
 
             <ul className={styles.list}>
                 <li>
