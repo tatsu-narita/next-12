@@ -3,7 +3,7 @@ import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 
-export default function pagination({
+export default function Pagination({
     prevText = "",
     prevUrl = "",
     nextText = "",
@@ -15,7 +15,7 @@ export default function pagination({
                 <li className={styles.prev}>
                     <Link href={prevUrl}>
                         <a className={styles.iconText}>
-                            <FontAwesomeIcon icon={faChevronLeft} color="var()--gray-25" />
+                            <FontAwesomeIcon icon={faChevronLeft} color="var(--gray-25)" />
                             <span>{prevText}</span>
                         </a>
                     </Link>
