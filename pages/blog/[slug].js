@@ -22,6 +22,8 @@ export default function Post({
     eyecatch,
     categories,
     description,
+    prevPost,
+    nextPost,
 }) {
     return (
         <Container>
