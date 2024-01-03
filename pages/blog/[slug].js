@@ -109,7 +109,7 @@ export async function getStaticProps(context) {
                 content: post.content,
                 eyecatch: eyecatch,
                 categories: post.categories,
-                description: post.description,
+                description: description,
                 prevPost: prevPost,
                 nextPost: nextPost,
             },
