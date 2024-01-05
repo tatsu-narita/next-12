@@ -13,9 +13,9 @@ export default function PostCategories({ categories }) {
             <ul className={styles.list}>
                 {categories.map(({ name, slug }) => (
                     <li key={slug}>
-                        <link href={`/blog/category/${slug}`}>
+                        <Link href={`/blog/category/${slug}`}>
                             <a>{name}</a>
-                        </link>
+                        </Link>
                     </li>
                 ))}
             </ul>
