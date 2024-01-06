@@ -5,7 +5,7 @@ const nextConfig = {
   images: {
     loader: "imgix",
     path: "",
-    domains: ["images.microcms-assets.i0"],
+    domains: ["images.microcms-assets.io"],
   },
 }
 
