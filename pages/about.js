@@ -31,7 +31,8 @@ export default function About() {
             <figure>
                 <Image
                     src={eyecatch}
-                    alt="" layout="responsive"
+                    alt=""
+                    layout="responsive"
                     sizes="(min-width: 1152px) 1152px, 100vw"
                     priority
                     placeholder="blur"
