@@ -98,4 +98,3 @@ export default function About() {
 About.getLayout = function getLayout(page) {
     return <BlueFrame>{page}</BlueFrame>
 }
-
