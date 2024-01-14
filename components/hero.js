@@ -9,7 +9,7 @@ import cube from "images/cube.jpg"
     blurDataURL: "data:image/jpeg;base64,",
 }*/
 
-export default function Hero({ title, subtitle, imageOn = false}) {
+export default function Hero({ title, subtitle, imageOn = false }) {
     return (
         <div className={styles.flexContainer}>
             <div className={styles.text}>
